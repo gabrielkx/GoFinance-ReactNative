@@ -35,19 +35,25 @@ export default function Dashboard () {
             </UserWrapper>
         </Header>
 
-        <HighLightCards
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{paddingHorizontal: 24}}
-        >
-            <HighLightCard/>
-            <HighLightCard/>
-            <HighLightCard/>
-            <HighLightCard/>
-            <HighLightCard/>
-            <HighLightCard/>
-            <HighLightCard/>
-
+        <HighLightCards >
+            <HighLightCard 
+            type="up"
+            title="Entradas" 
+            amount="R$17.400,00" 
+            lastTransaction="Última entrada dia 13 de abril."/>
+           
+           <HighLightCard 
+            type="down"
+            title="Saidas" 
+            amount="R$1.259,00" 
+            lastTransaction="Última saída dia 03 de abril."/>
+           
+           <HighLightCard 
+            type="total"
+            title="Total" 
+            amount="R$16.141,00" 
+            lastTransaction="01 á 16 de abril."/>
+           
         </HighLightCards>
 
     </Container>
